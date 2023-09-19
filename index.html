@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec image de fond</title>
+    <style>
+        body {
+            background-image: url('https://www.canon.fr/media/eos-1d-x-markii-image-management_tcm79-1345922.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+        }
 
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image-container div {
+            margin: 20px;
+            text-align: center;
+            color: #fff;
+            flex: 0 0 calc(33.33% - 40px); /* Trois colonnes avec un espace entre elles */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Taille maximale en pourcentage de la largeur du conteneur */
+            height: auto; /* Hauteur automatique pour conserver les proportions */
+        }
+    </style>
+</head>
+<body>
+    <h1>Gable Mathias digitale Albums</h1>
+    <div class="image-container">
+        <div>
+            <a href="lien_de_votre_image_3.jpg"><img src="https://lh3.googleusercontent.com/pw/AIL4fc_PTjPoVmfKASSiTbbgfHosnYAXiZV7vuI_JX5Tf0rNG5-GEX8vXK5kNaQdupGITeNRaq2YDOupnWEWWgiCGBTdz7uYpYCufY3IZ6mMQ64mKGWzQCKQGaZoJ2iRzodImS1JR1IGh_8LYLHCXyue1roVFoxAeex-i5fwPiwkKVmtsxTzj5Udz7sW75g81QfmU4HL_BZYykHN_cLEH7_dDFkteHI99zpwOy3Sqp4l0KHPTvM7cU2BoXqhcfH7wCa6vHh4wZPsKsYd1Pflkc1xPZN1-C8eO62ickPXd0zTCuMwKbXpeuotjUiRzaXIpvCnWGwE8-tV7bXC9izO20MBjrcUdoAqTnvUW50THtTYKFEVfp1JuvYJqmZz78Q-BVuJnruWN3GSVQAc519DaPjAeuTrWoC7lPwiQC-MQ12dIo__yoU0-GPxa0nCvraCiVjgXIZJ_HPtpXRqK021zOSa5D6lA_phatNdQhgJuJtVU1VSQ7hHvqvJt4JiGTTdV9rTMin98mfSAMdngaom26LrAUARISfB3duSWbh1BT9wqMpdQQh4mPRrPauQD354leg0gJCsiacdmlNlgq5sMgfYwdET67PuT0T7pFFmY3ssg2gl-9oiu664QOqvuF59IHUyj950_It-tlArhkyxiHzoMA9q8-aLmdORqn723zeMBmYTDyAQxUdlmUwZap-u3T5WIufzMpgB68z3hWXAXTkZ4pvbIqKjuAb0Y5nK4Tox5J_Av4bK5-MH9h7STRWEacIxfopkSPAyTN_abUSQKzx4RlaKvpvHRPQX0d38PEX_wV_IGCoIMwpLmjqLRy7cR4gsQ7k2PCUUqvzpP5qRJtWdQA_ASX5nufPYTjU4XzeD_FuGHV0W-NrGacC7ssOJfP38SADBcnhJJrq3zRsZDZqI01-XMOexeJ2McrGoU9zSLgOqIHjeJSD4I0qErQ=w1455-h970-s-no?authuser=0" alt="Image 3" class="custom-image">
+            <p>Photos Cross 23/07/2022</p>
+        </div>
+        <div>
+            <a href="lien_de_votre_image_2.jpg"><img src="https://lh3.googleusercontent.com/pw/AIL4fc_4-CRPdxLnv-d_l867sjuyYfrHuhTMQk8lDleGdDELldkYm3HzdWFYxqHI5LhkSSMhhWfGu1abkRy19Lk7loPlt7nUKqI7DVu-4WgztKjBPpW4qKpFGetkBTraoy4rJI0pwSt_SLH8FjbF9Ukma2ETngSgVxI-zerQo6q7bhFnnZRAluQRuqgEYRouxISBic8ljh5AoQ6acmZbcRDn0nn-3tv4tvWvh9U4DVC_mLwfBDuAy4TalAT8eZIwOxE3qM9teu0Q_c3MbspsjXlwLjbJ9W2p9Xx612-_TCWZEqQxVVXMZTo3M5LVq66OHGSCo_H0p8lnesgbAa6JT_HFigslTsgWHT3_5ssvvrUctg7RWmfyufVEmzib8UH4_8JrWTbS9p7oBKp8cfvZCU_ovQxk7o7HHFB19Vghnrf3wQnZaA-VtpBV2uebUwivDBrwR8H7uF6i2L0PSjtdLiS-kYBZuka10DBhJVlkaFYvZjMI0FtbOyOu6uh9kFclnCKO-zeNRbo54d2Ru85MVs5k1C6hYPwdFJeI7dgKgcDghjEPIipmxMo9vsG9jo39c6cB0zVitgmm1rNmhCwum2vXCsPFxHixOs1EzB2GMQJEY73-qYmxG7YGFoAVwNho-9jPxUZChVotyT7beGpiS9oNTFvxXNgdMNgJ9uHKIV6n-N_v9s9Ck8vFlG6Sqf4cLmCJRyvC7A71olZ8KbwW1eduzt_qSRL-hvVpUg9VhVTc01Xg1JmDDxztttb69dSH0X2GK-wDuRLcoNHvk_1uGN66MpSsyZdB5CrVUo8Kx417CE0PxtOnsiKGUejL_-hh8HvnhPcfpXdD6QYMQaRniuO6pmmYoLMQJ8OMRq7PVA6tIedHV3ngfp2xdJpDmBFuAQOc0HARKYpvqOjgQwFKjMtppXAYmGkrSKIupzRnsOMuSNKJFgGleUPf4wHQUQ=w1455-h970-s-no?authuser=0" alt="Image 2" class="custom-image">
+            <p>Photos Cross 26/05/2022</p>
+        </div>
+        <div>
+            <a href="lien_de_votre_image_1.jpg"><img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-xUIsfKO601iNy9KoDriQBI3OqQcTCnoVzyiXO5-YwZcczBnelu4tR3Q5SxZ0yZ1wvOUqbq3VOJtoauRyFTpumLPqEVBQ=w1879-h970" alt="Image 1" class="custom-image">
+            <p>Photos Cross 15/05/2022</p>
+        </div>
+    </div>
+</body>
+</html>
