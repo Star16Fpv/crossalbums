@@ -1,106 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>photosgable.online</title>
-    <link rel="icon" href="https://lh3.google.com/u/2/d/1Dw_4CBKwq6-ugehYfjH0yuT_Mbyl54MC=w919-h951-iv1">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page avec image de fond</title>
+    <title>Photosgable.online</title>
+    <link rel="icon" href="https://lh3.google.com/u/2/d/1Dw_4CBKwq6-ugehYfjH0yuT_Mbyl54MC=w919-h951-iv1">
     <style>
         body {
+            margin: 0;
+            padding: 0;
             background-image: url('eos-1d-x-markii-image-management_tcm79-1345922 (1).jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center center;
-            margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
         }
 
         h1 {
-            font-size: 36px;
-            color: #fff;
             text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-top: 20px;
+            font-size: 36px;
+            margin-top: 40px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
         }
 
         .image-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 100px;
+            gap: 30px;
+            padding: 40px 20px;
         }
 
-        .image-container div {
-            margin: 20px;
+        .image-card {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 300px; /* même hauteur pour toutes les images */
+            object-fit: cover; /* recadrage automatique pour remplir le cadre */
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-card img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+        }
+
+        .image-card p {
+            margin-top: 10px;
+            font-size: 18px;
             text-align: center;
-            color: #fff;
-            flex: 0 0 calc(33.33% - 40px); /* Trois colonnes avec un espace entre elles */
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
         }
 
-        .image-container img {
-            max-width: 100%; /* Taille maximale en pourcentage de la largeur du conteneur */
-            height: auto; /* Hauteur automatique pour conserver les proportions */
-        }
-
-        /* CSS pour l'image en haut à droite */
+        /* Image en haut à droite */
         .top-right-image {
             position: absolute;
             top: 70px;
             right: 20px;
-            width: 50px; /* Largeur souhaitée */
-            height: auto; /* Hauteur automatique pour conserver les proportions */
+            width: 50px;
+            height: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 1000px) {
+            .image-card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .image-card {
+                width: 90%;
+            }
         }
     </style>
 </head>
-
 <body>
+
     <a href="https://star16fpv.github.io/Galerie-cross/">
-        <img src="https://cdn-icons-png.flaticon.com/512/3388/3388657.png" alt="Image en haut à droite" class="top-right-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/3388/3388657.png" alt="Lien galerie" class="top-right-image">
     </a>
 
-    <h1>Gable Mathias digitale Albums</h1>
+    <h1>Gable Mathias Digital Albums</h1>
+
     <div class="image-container">
 
-        
-        <div>
-            <a href="https://drive.google.com/drive/folders/1BRkcjn9j-Et6a_wQDDAXfSsdgvHpRXrv?usp=sharing" target="_blank"><img src="AM0I8091.jpg" alt="Image 1" class="custom-image" style="border-radius: 15px;">
-            <p style="font-size:25px; color: white;">Photos Cross 11/05/2024</p>
+        <div class="image-card">
+            <a href="https://drive.google.com/drive/folders/1BRkcjn9j-Et6a_wQDDAXfSsdgvHpRXrv?usp=sharing" target="_blank">
+                <img src="AM0I8091.jpg" alt="Photos Cross 11/05/2024">
+            </a>
+            <p>Photos Cross 11/05/2024</p>
         </div>
 
-        <div>
-            <a href="https://drive.google.com/drive/folders/1S0GU6QQEXHbTFx6uW_Mg4511MLQ92fLt?usp=sharing" target="_blank"><img src="GX011008_1696099739636 (1).jpg" alt="Image 3" class="custom-image" style="border-radius: 15px;">
-            <p style="font-size:25px; color: white;">Photos Cross 30/09 - 01/10 2023</p>
-        </div>        
-        
-        <div>
-            <a href="https://drive.google.com/drive/folders/1Kp9WWTl-9G4z-IHzo6iZKJeFItc2X34v?usp=sharing" target="_blank"><img src="AM0I7810.jpg" alt="Image 3" class="custom-image" style="border-radius: 15px;">
-            <p style="font-size:25px; color: white;">Photos Cross 25/09/2022</p>
+        <div class="image-card">
+            <a href="https://drive.google.com/drive/folders/1S0GU6QQEXHbTFx6uW_Mg4511MLQ92fLt?usp=sharing" target="_blank">
+                <img src="GX011008_1696099739636 (1).jpg" alt="Photos Cross 30/09 - 01/10 2023">
+            </a>
+            <p>Photos Cross 30/09 - 01/10 2023</p>
         </div>
 
-        
-        <div>
-            <a href="https://drive.google.com/drive/folders/1SMZjBQZujoyQgs3MMTeNAAa3dVbSkfp5?usp=sharing" target="_blank"><img src="AM0I5018-1-ConvertImage (1) (1) (1) (1) (1) (1).jpg" alt="Image 3" class="custom-image" style="border-radius: 15px;">
-            <p style="font-size:25px; color: white;">Photos Cross 23/07/2022</p>
+        <div class="image-card">
+            <a href="https://drive.google.com/drive/folders/1Kp9WWTl-9G4z-IHzo6iZKJeFItc2X34v?usp=sharing" target="_blank">
+                <img src="AM0I7810.jpg" alt="Photos Cross 25/09/2022">
+            </a>
+            <p>Photos Cross 25/09/2022</p>
         </div>
 
-        
-        <div>
-            <a href="https://drive.google.com/drive/folders/1pr8ZmsFapyQ-FbaoyS0nGeXvvnJtqMFN?usp=sharing" target="_blank"><img src="AM0I2304-1-ConvertImage (1) (1) (1).jpg" alt="Image 2" class="custom-image" style="border-radius: 15px;">
-            <p style="font-size:25px; color: white;">Photos Cross 26/05/2022</p>
+        <div class="image-card">
+            <a href="https://drive.google.com/drive/folders/1SMZjBQZujoyQgs3MMTeNAAa3dVbSkfp5?usp=sharing" target="_blank">
+                <img src="AM0I5018-1-ConvertImage (1) (1) (1) (1) (1) (1).jpg" alt="Photos Cross 23/07/2022">
+            </a>
+            <p>Photos Cross 23/07/2022</p>
         </div>
 
-        
-        <div>
-            <a href="https://drive.google.com/drive/folders/1SRR47NcqUc49rVi2GBrT6ek2fb8kg4NF?usp=sharing" target="_blank"><img src="AM0I0537-ConvertImage (1) (1).jpg" alt="Image 1" class="custom-image" style="border-radius: 15px;">
-            <p style="font-size:25px; color: white;">Photos Cross 15/05/2022</p>
+        <div class="image-card">
+            <a href="https://drive.google.com/drive/folders/1pr8ZmsFapyQ-FbaoyS0nGeXvvnJtqMFN?usp=sharing" target="_blank">
+                <img src="AM0I2304-1-ConvertImage (1) (1) (1).jpg" alt="Photos Cross 26/05/2022">
+            </a>
+            <p>Photos Cross 26/05/2022</p>
         </div>
 
-
-
+        <div class="image-card">
+            <a href="https://drive.google.com/drive/folders/1SRR47NcqUc49rVi2GBrT6ek2fb8kg4NF?usp=sharing" target="_blank">
+                <img src="AM0I0537-ConvertImage (1) (1).jpg" alt="Photos Cross 15/05/2022">
+            </a>
+            <p>Photos Cross 15/05/2022</p>
+        </div>
 
     </div>
+
 </body>
 </html>
